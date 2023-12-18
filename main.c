@@ -170,11 +170,11 @@ int main()
     int x1,y1,z1;
 
     printf("Enter the three integer values(x):");
-    scanf("%d,%d,%d",&x);
+    scanf("%d",&x);
     printf("Enter the three integer values(y):");
-    scanf("%d,%d,%d",&y);
+    scanf("%d",&y);
     printf("Enter the three integer values(z):");
-    scanf("%d,%d,%d",&z);
+    scanf("%d",&z);
 
     x1 = x*x;
     y1 = y*y;
@@ -230,11 +230,39 @@ int main()
 int main ()
 {
     char name[25];
-    int mass;
+    float mass;
     float height;
     float BMI;
-    float healthrisk;
 
+    printf("Enter the name of the citizen:");
+    scanf("%s",&name);
+    printf("Enter the citizen's mass in kg:");
+    scanf("%f",&mass);
+    printf("Enter the citizen's height in kg:");
+    scanf("%f",&height);
+
+    BMI = mass/(height*height);
+
+    printf("\nBMI=%.2f\n",BMI);
+
+    if (BMI<18.5)
+    {
+        printf("Risk of developing problem such as  nutritional deficiency and osteoporosis.\n");
+    }
+    else if (BMI>=18.5 && BMI<23)
+    {
+        printf("Low Risk(healthy range)\n");
+    }
+    else if (BMI>=23 && BMI<27.5)
+    {
+        printf("Moderate risk of developing heart disease, high blood pleasure,stroke,diabetes.\n");
+    }
+    else
+    {
+        printf(" risk of developing heart disease, high blood pleasure,stroke,diabetes.\n");
+    }
+
+    return 0;
 }
 
 
