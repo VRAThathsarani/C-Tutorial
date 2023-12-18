@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-/*
+
 int main()
 {
 
@@ -161,7 +161,7 @@ int main()
     }
     return 0;
 }
-*/
+
 // Q9
 
 int main()
@@ -226,7 +226,7 @@ int main()
 }
 
 //Q10
-/*
+
 int main ()
 {
     char name[25];
@@ -235,6 +235,6 @@ int main ()
     float BMI;
     float healthrisk;
 
-}*/
+}
 
 
